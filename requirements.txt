@@ -2,8 +2,5 @@ fastapi
 uvicorn[standard]
 pytest
 httpx
-venv/
-__pycache__/
-.env
-.pytest_cache/
-.DS_Store
+flake8
+black
