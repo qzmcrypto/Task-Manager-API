@@ -12,8 +12,10 @@ def test_health():
 
 
 def test_create_task():
-    response = client.post("/tasks", json={"title":
-                                           "Learn CI/CD", "done": False})
+    response = client.post(
+        "/tasks",
+        json={"title": "Learn CI/CD", "done": False},
+    )
     assert response.status_code == 201
     data = response.json()
     assert data["title"] == "Learn CI/CD"
